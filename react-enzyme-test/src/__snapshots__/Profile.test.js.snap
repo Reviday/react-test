@@ -2,7 +2,7 @@
 
 exports[`<Profile /> matches sanpshot 1`] = `
 <Profile
-  name="홍길동"
+  name="윤성규"
   username="reviday"
 >
   <div>
@@ -11,7 +11,7 @@ exports[`<Profile /> matches sanpshot 1`] = `
     </b>
     <span>
       (
-      홍길동
+      윤성규
       )
     </span>
   </div>
