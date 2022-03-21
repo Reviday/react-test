@@ -4,7 +4,7 @@ import Profile from './Profile';
 function App() {
   return (
     <div className="App">
-      <Profile username="reviday" name="홍길동" />
+      <Profile username="reviday" name="윤성규" />
       <HookCounter />
     </div>
   );

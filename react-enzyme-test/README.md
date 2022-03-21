@@ -7,7 +7,6 @@ $ npx create-react-app react-enzyme-test
 # 혹은 yarn create react-app react-enzyme-test
 ```
 
-CRA로 만드는 프로젝트에는 Jest가 포함되어있기 때문에 별도 설치가 필요 없습니다. VS Code를 사용하는 경우, IDE 지원을 위해 `@types/jest`를 별도로 추가 설치합니다.
 
 ![enzyme-compatiblility](/images/enzyme-compatiblility.png)
 
@@ -492,6 +491,6 @@ describe('<HookCounter />', () => {
 });
 ```
 
-## 정리
+### 정리
 
 Enzyme의 [공식 문서](https://airbnb.io/enzyme/docs/api/)를 보면, Enzyme에 있는 더 많은 기능들을 볼 수 있습니다.
