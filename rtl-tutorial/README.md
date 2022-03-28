@@ -18,7 +18,7 @@ $ npx create-react-app rtl-tutorial
 
 src 디렉터리에 있는 setupTests.js 파일이 다음과 같이 되어있다면 넘어갑니다.
 
-`**src/setupTests.js**`
+**`src/setupTests.js`**
 
 ```jsx
 import '@testing-library/jest-dom';
@@ -28,7 +28,7 @@ import '@testing-library/jest-dom';
 
 username 과 name 을 props 로 넣어주면 이를 렌더링해주는 Profile 컴포넌트를 만들어봅시다.
 
-`**src/Profile.js**`
+**`src/Profile.js`**
 
 ```jsx
 import React from 'react';
@@ -64,7 +64,7 @@ export default App;
 
 그리고, Profile 컴포넌트를 위한 테스트 코드를 작성해봅니다.
 
-`**src/Profile.test.js**`
+**`src/Profile.test.js`**
 
 ```jsx
 import React from 'react';
@@ -88,7 +88,7 @@ describe('<Profile />', () => {
 
 react-testing-library 에서 컴포넌트를 렌더링 할 때에는 `render`라는 함수를 사용합니다. 이 함수가 호출되면 그 [결과물](https://testing-library.com/docs/react-testing-library/api/#render-result)에는 DOM을 선택할 수 있는 [다양한 쿼리](https://testing-library.com/docs/queries/about/)들과 `container`가 포함되어 있습니다. 여기서 `container`는 해당 컴포넌트의 최상위 `DOM`을 가리킵니다. 이를 가지고 스냅샷 테스팅을 할 수도 있습니다. 하지만, [이 곳](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library#not-using-screen)에 의하면 쿼리 사용을 권장하는 함수는 `render`의 결과물이 아닌, `screen`의 쿼리 함수들 입니다.
 
-> The benefit of using **`screen`** is you no longer need to keep the **`render`** call destructure up-to-date as you add/remove the queries you need. You only need to type **`screen`.**and let your editor's magic autocomplete take care of the rest.
+> The benefit of using **`screen`** is you no longer need to keep the **`render`** call destructure up-to-date as you add/remove the queries you need. You only need to type **`screen.`** and let your editor's magic autocomplete take care of the rest.
 > 
 
 이제 `npm test`(혹은 `yarn test`) 명령어를 실행해서 작성한 테스트가 잘 통과하는지 확인해봅니다.
@@ -100,7 +100,7 @@ react-testing-library 에서 컴포넌트를 렌더링 할 때에는 `render`�
 
 ![rtl-first-snap-testing](/images/rtl-first-snap-testing.png)
 
-최초 실행의 경우, **“1 snapshot written.”** 와 같은 문구가 보여질 것이고, `__**snapshots__/Profile.test.js.snap`** 라는 파일이 생깁니다.
+최초 실행의 경우, **“1 snapshot written.”** 와 같은 문구가 보여질 것이고, **`__snapshots__/Profile.test.js.snap`** 라는 파일이 생깁니다.
 
 ```jsx
 // Jest Snapshot v1, https://goo.gl/fbAQLP
